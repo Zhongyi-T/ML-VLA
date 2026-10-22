@@ -218,3 +218,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# ML-VLA：本地下载的数据与模型
+/data/
+/datasets/
+/models/
+/checkpoints/
+/playground/Datasets/
+/playground/Pretrained_models/
+
+# 模型权重
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# 本地运行输出与实验缓存
+/runs/
