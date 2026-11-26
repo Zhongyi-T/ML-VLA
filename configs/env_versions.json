@@ -1,0 +1,41 @@
+{
+  "course_tier": "B (Engineering Practice)",
+  "verified_date": "2026-11-26",
+  "hardware_verified": {
+    "gpu": "NVIDIA Tesla V100-PCIE-32GB (x2)",
+    "driver_version": "580.178.04",
+    "torch_cuda": "torch==2.6.0+cu124",
+    "use_bf16": false,
+    "note": "V100 (sm_70) does not support native bf16; inference uses fp32 (use_bf16=False). Vulkan offscreen rendering verified with NVIDIA ICD."
+  },
+  "pinned_versions": {
+    "starVLA": {
+      "repo": "https://github.com/starVLA/starVLA.git",
+      "commit": "3422b9f2387b6f682cf02802904a77b23ab13afd"
+    },
+    "SimplerEnv": {
+      "repo": "https://github.com/simpler-env/SimplerEnv.git",
+      "commit": "eddb5690749a1e34267807c0f7b5eede323918d7"
+    },
+    "ManiSkill2_real2sim": {
+      "repo": "https://github.com/simpler-env/ManiSkill2_real2sim.git",
+      "commit": "ef7a4d4fdf4b69f2c2154db5b15b9ac8dfe10682"
+    },
+    "base_vla_model": {
+      "repo_id": "StarVLA/Qwen3VL-GR00T-Bridge-RT-1",
+      "revision": "8ddb8116d5bd2953931619cfa9d60f278aeebceb",
+      "checkpoint_file": "checkpoints/steps_20000_pytorch_model.pt",
+      "checkpoint_sha256": "769d6c400d582a86ae8df8b0b445240ab679dbe77eeb72a4db71e43cd129c7c3"
+    },
+    "base_vlm": {
+      "repo_id": "Qwen/Qwen3-VL-4B-Instruct",
+      "revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17"
+    },
+    "dataset": {
+      "repo_id": "IPEC-COMMUNITY/bridge_orig_lerobot",
+      "revision": "0e9d76d07e9df3ea3eba257b2520d4913833fad2",
+      "subset": "chunk-000 (first 1000 complete WidowX episodes, 36027 frames, image_0 view)",
+      "split": "900 train / 100 val complete episodes (seed=42, overlap=0)"
+    }
+  }
+}

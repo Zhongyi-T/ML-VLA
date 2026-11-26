@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "ratio": "90/10",
+  "split_unit": "complete_episode",
+  "source_subset": "chunk-000 (first 1000 episodes of IPEC-COMMUNITY/bridge_orig_lerobot)",
+  "total_episodes": 1000,
+  "train_episodes": 900,
+  "val_episodes": 100,
+  "overlap": 0
+}
