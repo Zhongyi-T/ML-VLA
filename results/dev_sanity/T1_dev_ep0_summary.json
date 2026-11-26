@@ -1,0 +1,13 @@
+{
+  "task": "PutSpoonOnTableClothInScene-v0",
+  "checkpoint": "StarVLA/Qwen3VL-GR00T-Bridge-RT-1/checkpoints/steps_20000_pytorch_model.pt",
+  "episode_range": [
+    0,
+    1
+  ],
+  "success": [
+    true
+  ],
+  "success_rate": 1.0,
+  "purpose": "development_only"
+}
